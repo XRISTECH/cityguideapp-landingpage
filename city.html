@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Mobile App Landing Page for CITYGUIDE APP</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./css/city.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
+    rel="stylesheet">
+
+    <!-- SWIPPER JS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">CITYGUIDE</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list container">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-primary nav-button">Get Started</a>
+          </li>
+
+          <!-- <button class="nav-button">Get App</button> -->
+          <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </ul>
+      </nav>
+
+      
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Discover CityGuide App</p>
+
+            <h1 class="h1 hero-title">Make an Impression In the City & Explore More With Your Ultimate Travel Companion CITYGUIDE</h1>
+
+            <p class="section-text">
+                Discover Your Next Favorite Places and Transform your digital experience with cutting-edge technology
+            </p>
+
+            <ul class="btn-list">
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from app store">
+                  <img src="img/appstore.svg" width="185" height="69" alt="app store" class="img">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from play store">
+                  <img src="img/playstore.svg" width="185" height="69" alt="play store" class="img">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="img/CityGuide DetailsScreen-left.png" width="769" height="804" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle">Our App Feature</p>
+
+          <h2 class="h2 section-title">Awesome Features</h2>
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Intuitive Design</h3>
+
+                <p class="card-text">
+                    Beautiful and user-friendly design for all ages.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Fully Secure</h3>
+
+                <p class="card-text">
+                    Top-notch security ensures your data is always safe.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Manage User</h3>
+
+                <p class="card-text">
+                  Comes with a very efficent way of managing users on the platform
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Fast Performance</h3>
+
+                <p class="card-text">
+                    Experience lightning-fast performance with every interaction.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+   <!-- Add this in the body -->
+<!-- Video Modal -->
+<div id="videoModal" class="video-modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <video id="promoVideo" controls>
+            <source src="img/CityGuideApp Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
+
+      <!-- ABOUT SECTION -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="img/CityGuide HomeScreen-portrait.png" width="1262" height="1357" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Main Goal and Objectives</p>
+
+            <h2 class="h2 section-title" style="color: white;">Discover Your Next Favorite Places and Transform your digital experience with cutting-edge technology</h2>
+
+            <p class="section-text" style="color: white;">
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
+              pulvinar
+              dapibus leo. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullam
+              corpe
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="item-icon">
+                  <ion-icon name="folder" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title" style="color:var(--pumpkin);">Ultimate Travel Companion,</h3>
+
+                  <p class="item-text" style="color: white;">
+                    CityGuide is your ultimate travel companion, designed to help you discover hidden gems and iconic landmarks. With a sleek interface and powerful features, our app ensures every journey is unforgettable.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon">
+                  <ion-icon name="pie-chart" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title" style="color:var(--pumpkin); ">Easy to Explore a Bustling Metropolis</h3>
+
+                  <p class="item-text" style="color: white;">
+                    Whether you're exploring a bustling metropolis or a tranquil getaway, CityGuide provides curated recommendations tailored to your preferences. Find the best restaurants, attractions, and events in real-time with a few taps.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-secondary" style=" background-color: var(--pumpkin);">Discover More</a>
+
+          </div>
+
+        </div>
+      </section> 
+
+
+
+      
+
+      
+        
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">CITYGUIDE</a>
+
+          <p class="section-text">
+            Discover Your Next Favorite Places and Transform your digital experience with cutting-edge technology
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Core Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Team</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing Plan</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Download</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">How It Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Get In Touch</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+12023459999" class="item-link">08146536786</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:supportvast@gmail.com" class="item-link">chrisibeawuchimiracle@gmail.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+
+            <address class="item-link address">
+              Ikenegbu Owerri,<br>
+             Imo State, Nigeria
+            </address>
+          </li>
+
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+  
+          <p class="copyright">
+            &copy; 2024 All Rights Reserved by <a href="#" class="">CityGuide</a>.
+          </p>
+  
+        </div>
+      </div>
+
+     
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    // Open modal and play video
+function openModal() {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('promoVideo');
+    modal.style.display = 'block';
+    video.play(); // Automatically play video
+}
+
+// Close modal and pause video
+function closeModal() {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('promoVideo');
+    modal.style.display = 'none';
+    video.pause(); // Pause video
+    video.currentTime = 0; // Reset video to the start
+}
+
+// Attach openModal to the Get App button
+document.querySelector('.nav-button').onclick = openModal;
+</script>
+  
+
+</body>
+</html>
+
+
+</body>
+
+</html>
